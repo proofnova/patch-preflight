@@ -50,7 +50,7 @@
       "url": "https://www.gnu.org/software/diffutils/manual/html_node/Invoking-patch.html",
       "capability": "Established patch application tool; exact manual page timed out",
       "burden": "Manual unavailable in this session; feature comparison remains incomplete",
-      "evidence_status": "primary page read; exact feature parity not fully executed"
+      "evidence_status": "Access limited: feature details unverified"
     },
     {
       "name": "Manual or composed workflow",
@@ -66,18 +66,22 @@
       "Korean"
     ],
     "queries": [
-      "Exact patch preflight",
-      "patch preflight",
-      "AI가 만든 unified diff를 실제 원문에 맞춰 메모리에서 검증·적용한다.",
-      "git-apply",
-      "gnu-patch"
+      "unified diff exact context dry run git apply check 패치 검증"
     ],
     "scope": "Primary documentation and repository descriptions were read on the public web. Competitor code, plugins and packaged execution were not exhaustively tested. This is a bounded prior-art review, not a worldwide novelty search.",
     "limitations": [
       "Search results and documentation do not establish universal absence.",
       "Competitor configuration/plugin parity is not exhausted.",
       "No independent end-user interview or deployment evidence."
-    ]
+    ],
+    "proposed_queries": [
+      "Exact patch preflight",
+      "patch preflight",
+      "AI가 만든 unified diff를 실제 원문에 맞춰 메모리에서 검증·적용한다.",
+      "git-apply",
+      "gnu-patch"
+    ],
+    "query_scope": "One actual bilingual search per resource, grouped in shared cached batches; additional suggested terms are explicitly proposed, not executed."
   },
   "checked_at": "2026-10-24",
   "distinctive_capability": "Exact hunk offsets/content/counts, path rejection and source/result fingerprints. An offline executable can be called by a small model and checked against an explicit task contract.",
@@ -103,7 +107,8 @@
   "validation_results": {
     "worked_cases": 1,
     "evaluation_cases": 1,
-    "root_required_field_rejection": true
+    "root_required_field_rejection": true,
+    "fixture_role": "Development regression fixtures; not an untouched final model evaluation set."
   },
   "external_impact_evidence": [],
   "decision": {
